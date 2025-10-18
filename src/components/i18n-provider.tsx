@@ -6,7 +6,7 @@ type Language = 'en' | 'es';
 
 const translations = {
     en: {
-        "CryptoFraud Buster": "CryptoFraud Buster",
+        "Scam Alert": "Scam Alert",
         "Unmask crypto scams with AI. Upload an ad, screenshot, or video, and provide a URL to get an instant fraud analysis. Stay safe in the crypto world.": "Unmask crypto scams with AI. Upload an ad, screenshot, or video, and provide a URL to get an instant fraud analysis. Stay safe in the crypto world.",
         "Start New Analysis": "Start New Analysis",
         "Provide a URL, and/or upload an image/video of a crypto broker or ad. Our AI will analyze them for signs of fraud.": "Provide a URL, and/or upload an image/video of a crypto broker or ad. Our AI will analyze them for signs of fraud.",
@@ -57,7 +57,7 @@ const translations = {
         "Reported": "Reported"
     },
     es: {
-        "CryptoFraud Buster": "CryptoFraud Buster",
+        "Scam Alert": "Scam Alert",
         "Unmask crypto scams with AI. Upload an ad, screenshot, or video, and provide a URL to get an instant fraud analysis. Stay safe in the crypto world.": "Desenmascara estafas de criptomonedas con IA. Sube un anuncio, captura de pantalla o video, y proporciona una URL para obtener un análisis de fraude instantáneo. Mantente seguro en el mundo cripto.",
         "Start New Analysis": "Iniciar Nuevo Análisis",
         "Provide a URL, and/or upload an image/video of a crypto broker or ad. Our AI will analyze them for signs of fraud.": "Proporciona una URL y/o sube una imagen/video de un bróker o anuncio de criptomonedas. Nuestra IA los analizará en busca de señales de fraude.",

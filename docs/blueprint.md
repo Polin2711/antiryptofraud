@@ -1,4 +1,4 @@
-# **App Name**: CryptoFraud Buster
+# **App Name**: Scam Alert
 
 ## Core Features:
 
