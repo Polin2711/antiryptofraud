@@ -4,7 +4,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { I18nProvider } from '@/components/i18n-provider';
 
 export const metadata: Metadata = {
-  title: 'CryptoFraud Buster',
+  title: 'Scam Alert',
   description: 'Analyze crypto brokers and ads for fraud using AI.',
 };
 
