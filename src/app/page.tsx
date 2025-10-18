@@ -18,7 +18,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <section className="text-center mb-12">
             <h1 className="font-headline text-4xl md:text-5xl font-bold tracking-tight text-primary">
-              {t('CryptoFraud Buster')}
+              {t('Scam Alert')}
             </h1>
             <p className="mt-4 text-lg text-foreground/80 max-w-2xl mx-auto">
               {t('Unmask crypto scams with AI. Upload an ad, screenshot, or video, and provide a URL to get an instant fraud analysis. Stay safe in the crypto world.')}
