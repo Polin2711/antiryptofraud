@@ -2,6 +2,7 @@
 "use client";
 
 import Header from '@/components/layout/header';
+import Footer from '@/components/layout/footer';
 import FraudAnalyzer from '@/components/fraud-analyzer';
 import ScamHelp from '@/components/scam-help';
 import { Separator } from '@/components/ui/separator';
@@ -33,6 +34,7 @@ export default function Home() {
           <ScamHelp />
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
