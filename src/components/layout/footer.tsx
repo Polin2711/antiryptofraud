@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="bg-background border-t border-border">
       <div className="container mx-auto px-4 py-6">
         <div className="text-center text-sm text-muted-foreground">
-          Made with ❤ by{' '}
+          Made with ❤ by{" "}
           <a
             href="https://www.instagram.com/polito_lima/"
             target="_blank"
@@ -12,6 +12,9 @@ export default function Footer() {
           >
             Polito
           </a>
+        </div>
+        <div className="text-center text-xs text-muted-foreground mt-2">
+          © scamalert.es, 2025. All rights reserved
         </div>
       </div>
     </footer>
