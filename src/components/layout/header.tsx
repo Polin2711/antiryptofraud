@@ -1,22 +1,20 @@
-
-"use client";
-
-import Logo from '@/components/icons/logo';
-import LanguageSwitcher from './language-switcher';
-import { useI18n } from '@/components/i18n-provider';
+import Link from "next/link";
+import Logo from "@/components/icons/logo";
 
 export default function Header() {
-  const { t } = useI18n();
   return (
-    <header className="py-4 px-4 md:px-6 bg-card/80 backdrop-blur-sm sticky top-0 z-50 border-b">
-      <div className="container mx-auto flex items-center justify-between">
-        <div className="flex items-center gap-4">
+    <header className="bg-background border-b border-border">
+      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+        <Link href="/" className="flex items-center gap-3">
           <Logo className="h-8 w-8 text-primary" />
-          <span className="font-headline text-xl font-bold text-foreground">
-            {t('Scam Alert')}
-          </span>
-        </div>
-        <LanguageSwitcher />
+          <div className="flex items-baseline gap-2">
+            <span className="font-headline text-lg font-bold text-primary">Scam Alert</span>
+            <span className="ml-1 inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-yellow-100 text-yellow-800">
+              BETA
+            </span>
+          </div>
+        </Link>
+        {/* Mantengo el espacio para posibles elementos a la derecha (ej. select de idioma, enlaces) */}
       </div>
     </header>
   );
