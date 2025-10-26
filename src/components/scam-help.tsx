@@ -59,7 +59,7 @@ export default function ScamHelp() {
       <CardHeader>
         <CardTitle className="font-headline flex items-center gap-2">
             <LifeBuoy className="h-6 w-6 text-primary" />
-            {t('Already Scammed? Get Help')}
+            {t('Got Scammed? Get Help')}
         </CardTitle>
         <CardDescription>
             {t('Describe your situation below. Our AI will provide recommendations on what to do next.')}
