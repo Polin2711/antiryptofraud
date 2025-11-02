@@ -23,9 +23,9 @@ import { useI18n } from "@/components/i18n-provider";
 const formSchema = z.object({
   url: z.string().url({ message: "Please enter a valid URL." }).optional().or(z.literal('')),
   mediaFile: z.instanceof(File).optional(),
-}).refine(data => !!data.url || !!data.mediaFile, {
-  message: "Please provide a URL or upload a file to start the analysis.",
-  path: ["url"],
+}).refine(data => !!data.mediaFile, {
+  message: "Please upload an image or video to start the analysis.",
+  path: ["mediaFile"],
 });
 
 type FormValues = z.infer<typeof formSchema>;
@@ -205,8 +205,8 @@ export default function FraudAnalyzer() {
                 </div>
             )}
             
-            {formState.errors.url?.type === 'custom' && (
-                <Alert variant="destructive"><AlertCircle className="h-4 w-4" /><AlertDescription>{formState.errors.url.message}</AlertDescription></Alert>
+            {formState.errors.mediaFile && (
+                <Alert variant="destructive"><AlertCircle className="h-4 w-4" /><AlertDescription>{formState.errors.mediaFile.message}</AlertDescription></Alert>
             )}
 
           </CardContent>
